@@ -1,4 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env -S python3 -W ignore::DeprecationWarning
+#
+# Although not exactly portable, starting with coreutils 8.30: The
+# -S/--split-string options enable using multiple arguments on the first one of
+# scripts (shebang line, ‘#!’).
+# [ref](https://www.gnu.org/software/coreutils/manual/html_node/env-invocation.html#g_t_002dS_002f_002d_002dsplit_002dstring-usage-in-scripts)
 
 import glob
 import imp
